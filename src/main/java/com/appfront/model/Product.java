@@ -10,16 +10,16 @@ import javax.persistence.Table;
 @Table(name="product")
 public class Product {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer prodid;
 	private String proddesc;
 	public Product() {
 		
 	}
-	public Integer getId() {
+	public Integer getProdid() {
 		return prodid;
 	}
-	public void setId(Integer id) {
+	public void setProdid(Integer id) {
 		this.prodid = id;
 	}
 	public String getProddesc() {
